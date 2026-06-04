@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volcano Eruption Simulation</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="ui-container">
+        <h1>Volcano Eruption</h1>
+        <div class="control-group">
+            <label for="timeScale">Time Scale: <span id="timeScaleValue">1.0</span>x</label>
+            <input type="range" id="timeScale" min="0.1" max="2.0" step="0.1" value="1.0">
+        </div>
+        <div class="control-group">
+            <label for="eruptionForce">Eruption Force: <span id="eruptionForceValue">High</span></label>
+            <input type="range" id="eruptionForce" min="5" max="25" step="1" value="15">
+        </div>
+        <div class="control-group">
+            <label for="particleCount">Particle Density: <span id="particleCountValue">Medium</span></label>
+            <input type="range" id="particleCount" min="1" max="10" step="1" value="5">
+        </div>
+        <button id="eruptBtn">Trigger Eruption</button>
+    </div>
+    <canvas id="simulationCanvas"></canvas>
+    <script src="script.js"></script>
+</body>
+</html>
